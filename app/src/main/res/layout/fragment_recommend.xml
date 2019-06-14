@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contentDescription="@string/app_name"
+    android:fillViewport="true"
+    android:scrollbarSize="10dp"
+    android:scrollbarStyle="insideInset"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <cn.bingoogolapple.bgabanner.BGABanner
+            android:id="@+id/banner"
+            android:layout_height="245dp"
+            android:layout_width="wrap_content"
+            app:banner_pageChangeDuration="1000"
+            app:banner_pointAutoPlayAble="true"
+            app:banner_pointContainerBackground="@android:color/transparent"
+            app:banner_pointDrawable="@drawable/bga_banner_selector_point_hollow"
+            app:banner_pointTopBottomMargin="15dp"
+            app:banner_transitionEffect="zoom" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/personal_recommend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="35dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/private_fm"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/fm_normal" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="10dp"
+                                android:text="私人FM"
+                                android:textColor="#000000"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Button
+                                    android:id="@+id/daily_btn"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/dailly_normal" />
+                            </FrameLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="每日歌曲推荐"
+                                android:textColor="#000000"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="35dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/yun"
+                                android:layout_width="wrap_content"
+                                android:layout_height="81dp"
+                                android:background="@drawable/upbill" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:text="云音乐新歌榜"
+                                android:textColor="#000000"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_below="@+id/personal_recommend"
+                android:layout_marginTop="15dp"
+                android:background="#E0E0E0" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/recommend_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--<include layout="@layout/recommend_playlist" />-->
+            <!--<include layout="@layout/recommend_newalbums"/>-->
+            <!--<include layout="@layout/recommend_radio"/>-->
+            <!--添加布局的位置-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/item_change"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/layout_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_marginTop="20dp"
+                android:background="#E0E0E0" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/huayu"
+                    android:text="华语速爆新歌"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:background="#00000000"/>
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/dayouxi"
+                    android:text="适合打游戏时听的歌"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="30dp"
+                    android:background="#00000000"/>
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/gudian"
+                    android:text="古典"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="30dp"
+                    android:background="#00000000"/>
+                <!--第一行结束-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/yuedui"
+                    android:text="The Beatles"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_marginTop="20dp"
+                    android:background="#00000000"/>
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/star"
+                    android:text="一个明星的诞生"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="#00000000"/>
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/b"
+                    android:text="推荐音乐"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="#00000000"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="遇见好声音"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/button2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
+
+            <!--Bottom over-->
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

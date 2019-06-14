@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:my="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.team.activitys.MainActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="217dp"
+        android:background="@drawable/commom_top"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/h_back"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <ImageView
+            android:id="@+id/h_head"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="67dp"
+            android:layout_marginRight="230dp"
+            android:background="@drawable/tx1"
+            android:scaleType="centerInside" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/h_back"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="200dp"
+                android:text="张三"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/user_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-33dp"
+                android:layout_toRightOf="@id/user_name"
+                android:text="182****5882"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="0dp"
+       android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+
+        <!--注意这里的nav——bar是被写死的-->
+        <com.team.widget.nav_bar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dengji"
+            my:icon="@drawable/level"
+            my:hint="等级"
+            android:background="@drawable/selector"
+            >
+        </com.team.widget.nav_bar>
+        <!---->
+        <com.team.widget.nav_bar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/my_asset_mange"
+            my:icon="@drawable/person"
+            my:hint="个人信息设置"
+            android:background="@drawable/selector"
+            >
+        </com.team.widget.nav_bar>
+        <com.team.widget.nav_bar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/version"
+            my:icon="@mipmap/product_info_icon"
+            my:hint="版本更新"
+            android:background="@drawable/selector"
+            >
+        </com.team.widget.nav_bar>
+
+        <com.team.widget.nav_bar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/about"
+            my:icon="@mipmap/my_reward_manage"
+            my:hint="关于"
+            android:background="@drawable/selector"
+            >
+        </com.team.widget.nav_bar>
+        <com.team.widget.nav_bar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/quit"
+            my:icon="@drawable/shutdown"
+            my:hint="退出登录"
+            android:background="@drawable/selector"
+            >
+        </com.team.widget.nav_bar>
+    </LinearLayout>
+</LinearLayout>

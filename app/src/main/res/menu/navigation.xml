@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_faxian"
+        android:icon="@drawable/ic_stat_faxian"
+        android:title="@string/title_faxian" />
+
+    <item
+        android:id="@+id/navigation_shiping"
+        android:icon="@drawable/ic_stat_shiping"
+        android:title="@string/title_shiping" />
+
+    <item
+        android:id="@+id/navigation_wode"
+        android:icon="@drawable/ic_stat_wode"
+        android:title="@string/title_wode" />
+    <item
+        android:id="@+id/navigation_dongtai"
+        android:icon="@drawable/ic_stat_dongtai"
+        android:title="@string/title_dongtai"
+        />
+    <item
+        android:id="@+id/navigation_zhanghao"
+        android:icon="@drawable/ic_stat_zhanghaop"
+        android:title="@string/title_zhanghao"
+        />
+</menu>

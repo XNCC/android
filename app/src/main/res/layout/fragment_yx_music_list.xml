@@ -1,0 +1,224 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/headerview"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:id="@+id/headerdetail"
+        android:layout_width="match_parent"
+        android:layout_height="179dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+        <ImageView
+            android:layout_alignParentTop="true"
+            android:id="@+id/album_art"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:scaleType="centerCrop" />
+
+        <View
+            android:id="@+id/overlay"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_alignParentTop="true"
+            android:background="#60919191" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="18dp"
+            android:orientation="horizontal"
+            android:id="@+id/lay01">
+
+            <FrameLayout
+                android:layout_width="123dp"
+                android:layout_height="123dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/fra">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/placeholder_disk_210"
+                    />
+                <FrameLayout
+                    android:visibility="invisible"
+                    android:id="@+id/playlist_fav"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#aa000000" />
+                    <ImageView
+                        android:src="@drawable/play_icn_love"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#1e000000"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:layout_marginRight="3dp"
+                        android:textColor="	#FFFFFF"
+                        android:textSize="12sp"
+                        android:id="@+id/playlist_listen_count" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_marginRight="10dp"
+                android:id="@+id/album_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:ellipsize="end"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/album_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="3dp"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!--按钮start-->
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lay02">
+
+            <LinearLayout
+                android:id="@+id/playlist_collect"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/playlist_collect_view"
+                    android:src="@drawable/list_detail_icn_fav"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp" />
+
+                <TextView
+                    android:id="@+id/playlist_collect_state"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:text="收藏"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/playlist_cmt"
+                    android:layout_weight="1"
+                    android:src="@drawable/list_detail_icn_cmt_dis"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"/>
+
+                <TextView
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:text="评论"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/playlist_share"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/playlist_share_view"
+                    android:src="@drawable/list_detail_icn_share"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:text="分享"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="?android:selectableItemBackground"
+                android:id="@+id/playlist_down"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/list_detail_icn_dld"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp" />
+
+                <TextView
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:text="下载"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/texts"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/main_listview"
+            android:layout_below="@+id/main_textview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+</LinearLayout>

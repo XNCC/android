@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MusicPlayer</string>
+    <string name="title_faxian">发现</string>
+    <string name="title_shiping">视频</string>
+    <string name="title_wode">我的</string>
+    <string name="title_dongtai">动态</string>
+    <string name="title_zhanghao">账号</string>
+    <string name="login">用户登录</string>
+    <string name="tv_username">用户:</string>
+    <string name="tv_password">密码:</string>
+    <string name="bt_log">登录</string>
+    <string name="bt_bos">取消</string>
+    <string name="et_username">输入用户名</string>
+    <string name="et_password">输入密码</string>
+</resources>

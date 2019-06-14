@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    android:id="@+id/layoutColor"
+    >
+
+    <!---推荐歌曲-->
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/relative"
+        android:paddingLeft="10dp">
+
+
+
+        <ImageView
+            android:layout_width="500px"
+            android:layout_height="300px"
+            android:id="@+id/videoImage"
+            android:src="@drawable/bofang"
+            />
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:topRightRadius="5dp"
+            android:bottomRightRadius="5dp"
+            android:bottomLeftRadius="5dp"
+          android:orientation="vertical"
+            android:paddingLeft="10dp"
+            >
+            <TextView
+                android:id="@+id/usernames"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="#来执天堂的魔鬼"
+                android:layout_marginTop="10dp"
+                android:textColor="#000"
+                />
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+
+                android:paddingBottom="10px">
+                <TextView
+                    android:id="@+id/MusicName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="歌名"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000"
+                    />
+                <TextView
+                    android:id="@+id/Singer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#AAAAAA"
+                    android:textSize="10sp"
+                    android:paddingLeft="12px"
+                    android:text="歌手"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

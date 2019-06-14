@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d8e0e8"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:elevation="2dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/speak"
+            android:layout_width="0dp"
+            android:layout_height="34dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="22dp"
+            android:layout_weight="1"
+            android:background="@drawable/comment_bt_selector"
+            android:gravity="center_vertical"
+            android:paddingLeft="18dp"
+            android:text="说点什么吧..."
+            android:textColor="#B6B6B6"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/icon_collect" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="32"
+            android:textColor="#9A9A9A"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/icon_work_like" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="14dp"
+            android:text="66"
+            android:textColor="#9A9A9A"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/msg_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#0000">
+    </ListView>
+
+
+</LinearLayout>

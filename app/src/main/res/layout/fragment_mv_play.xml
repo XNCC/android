@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20px"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/geming"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:textSize="15dp"
+        android:paddingBottom="8dp"
+        android:textColor="#090909"
+        android:text="烟花易冷"/>
+        <TextView
+            android:id="@+id/geshou"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textSize="10dp"
+            android:paddingBottom="8dp"
+            android:textColor="#090909"
+            android:text="周杰伦"/>
+     </LinearLayout>
+
+
+    <VideoView
+        android:id="@+id/video"
+        android:layout_width="match_parent"
+        android:layout_height="360dp" />
+
+    <!--播放视频区的详情与评论页面切换-->
+    <TabHost
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!-- TabWidget组件id值不可变-->
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TabWidget>
+            <!-- FrameLayout布局，id值不可变-->
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@android:id/tabs">
+
+
+                <!-- 第一个tab的布局  详情部分
+                title      标题
+                singers    歌手
+                cishu      播放次数
+                time       发行时间
+                details    详细信息
+                -->
+                <!-- 第二个tab的布局  评论部分-->
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <ListView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/commentss">
+
+                    </ListView>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="一路向北（电影《头文字D》插曲）"
+                        android:textSize="30dp"
+                        android:textColor="#000"
+                        android:paddingTop="10px"
+                        android:paddingLeft="15px"/>
+                    <TextView
+                        android:id="@+id/singers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="周杰伦"
+                        android:textSize="16dp"
+                        android:textColor="#090909"
+                        android:paddingTop="8px"
+                        android:paddingLeft="15px"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="8px">
+                    <TextView
+                        android:id="@+id/cishu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="349.2万次播放"
+                        android:textSize="16dp"
+                        android:textColor="#090909"
+                        android:paddingLeft="15px"
+                        android:paddingTop="5px"/>
+                    <TextView
+                        android:id="@+id/time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2010-07-01"
+                        android:textSize="16dp"
+                        android:textColor="#090909"
+                        android:paddingLeft="30px"
+                        android:paddingTop="5px"/>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="周杰伦 ---- 一路向北（电影《头文字D》插曲）"
+                        android:textSize="16dp"
+                        android:textColor="#090909"
+                        android:paddingLeft="15px"
+                        android:paddingTop="8px"/>
+                </LinearLayout>
+
+
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+
+</LinearLayout>

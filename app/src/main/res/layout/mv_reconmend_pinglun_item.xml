@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--
+
+      tupian             评论区头像图片
+      name               评论者
+      times              评论时间
+      recommnendContent  评论内容
+    -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+      <!--  <ImageView
+            android:id="@+id/tupians"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/apple"/>
+            -->
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="14dp"
+                android:paddingLeft="10dp"
+                android:text="456789555555"
+                />
+                <TextView
+                    android:id="@+id/times"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="0dp"
+                    android:paddingLeft="10dp"
+                    android:text="2019-9-8"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/recommnendContent"
+          android:paddingTop="5dp"
+          android:paddingLeft="60dp"
+          android:text="12345689455555555555555555555555555555555555555555555555"/>
+
+    </LinearLayout>
+
+
+</ScrollView>
